@@ -5,139 +5,394 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Pagina1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css copy/style.css">
+    <link rel="icon" href="img/logo.ico">
+    <title>GIRA</title>
     <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top navbar-transparent container-fluid">
+
         <div class="container">
-        <img src="img/banner-amanecer.jpg"class="img-fluid"  width="1300" height="400"alt="">
-        </div>
-    <div class="container">
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#!"><strong>Pagina Artista</strong></a>
-            
-            <!-- Botón hamburguesa  -->
+            <!-- Marca -->
+            <a class="navbar-brand" href="#top"><strong>Pagina Artista</strong></a>
+
+            <!-- Botón hamburguesa -->
             <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
+
             <!-- Menú colapsable -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="index.html">Biografia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="musica.html">Musica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gira.html">Gira</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Biografía</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="musica.html">Música</a></li>
+                <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="gira.html">Gira</a></li>
+                <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <!-- Redes sociales al estilo Benda -->
+            <div class="d-flex">
+                <a class="nav-link" href="https://facebook.com" target="_blank">
+                <i class="bi bi-facebook"></i>
+                </a>
+                <a class="nav-link" href="https://instagram.com" target="_blank">
+                <i class="bi bi-instagram"></i>
+                </a>
+                <a class="nav-link" href="https://tiktok.com" target="_blank">
+                <i class="bi bi-tiktok"></i>
+                </a>
+            </div>
             </div>
         </div>
-    </nav>
-</div>
-
-</header>
-</head>
-<body>
+        </nav> 
+        <img src="img/barns-banner-4.jpg"class="img-fluid" alt="Banner barns">
+    </header>
+    </head>
+    <body>
     <br><br>
-<div class="container">
-
-    <h1> Giras</h1>
-        <hr style="border: 5px solid; color: blue; width: 50%;">
-    <!--Tabla 3-->
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Fecha</th>
-                    <th scope="col">Lugar</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col">Hora Local</th>
-                </tr>
-                <tbody>
-                    <tr>
-                        <!--Fila 1-->
-                        <th scope="row">9 de Agosto</th>
-                        <th>Plaza de Toros</th>
-                        <th>Tijuana</th>
-                        <th>9:00PM</th>
-                    </tr>
-                    <!--Fila 2-->
-                    <tr>
-                        <th scope="row">23 de Agosto</th>
-                        <th>Auditorio GNP</th>
-                        <th>Merida</th>
-                        <th>11:00PM</th>
-                    </tr>
-                    <tr>
-                        <!--Fila 3-->
-                        <th scope="row">28 de agosto</th>
-                        <th>Arena VGF</th>
-                        <th>Guadalajara</th>
-                        <th>12:00PM</th>
-                    </tr>
-                    <tr>
-                        <!--Fila 4-->
-                        <th scope="row">29 de agosto</th>
-                        <th>Arena MTY</th>
-                        <th>Monterrey</th>
-                        <th>Monterrey</th>
-                    </tr>+<tr>
-                        <!--Fila 5-->
-                        <th scope="row">6 de Septiembre</th>
-                        <th>Palacio de los deportes</th>
-                        <th>CDMX</th>
-                        <th>11:00PM</th>
-                    </tr>
-                    
-                </tbody>
-            </thead>
-        </table>
-
-        <p class="justify-text">Los boletos estarán disponibles a través de una preventa especial para clientes Citibanamex.
-            La misma comienza el 26 de noviembre a través de la plataforma de Ticketmaster. La venta general será el día siguiente,
-            el 27 de noviembre, cuando los boletos estarán disponibles para el público en general.</p>
-    </div>
-<br><br>
-        <div class="container text-center">
-    <button onclick="location.href='index.html'" class="btn btn-dark mt-4">Conóceme mas</button>
-</div>
-<br><br>
-
-
-<br>
-<footer class="bg-primary text-white text-center py-3 cont">
-    <div class="container">
+    <div class="container" style="padding: 30px; background-color: #722F37; border-radius: 10px;">
         <div class="row">
-            <div class="col-md-12 py-5">
-                <div class="margin-5 flex-center">
-                    <a href="https://www.youtube.com/@rels9" class="fb-ic">
-                        <i  class="fa-brands fa-youtube fa-lg text-secondary mb-3"></i>
-                    </a>
-                    <a href="https://www.instagram.com/p/DCzlUdRNr-U/" class="li-ic">
-                        <i class="fa-brands fa-instagram fa-lg  text-secondary mb-3"></i>
-                    </a>
-                </div>
+            <div class="col-sm-6" >
+                <img src="img/gira-perfil.png" alt="Perfil de barns courtney " style="text-align: center;">
+            </div>
+            <div class="col-sm-6" style="color: white;" >
+                <h3 style="padding-top: 60px;">Barns Courtney Conciertos</h3>
+                <p>¡No te pierdas a Barns Courtney en conciertos en vivo y que está de gira ahora mismo!
+                    Hay 24 conciertos programados a lo largo de Estados Unidos y Canadá. El próximo
+                    concierto de Barns Courtney está programado para el miércoles, 1 de abril de 2026
+                    en Club Dada en Dallas, TX, Estados Unidos.</p>
+                    <div class="row">
+                    <div class="col-sm-4">
+                        <i class="fa-solid fa-earth-americas fa-sm"></i> <p>Dos paises</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <i class="fa-solid fa-microphone fa-sm"></i> <p>10 Conciertos</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <i class="fa-regular fa-calendar fa-sm"></i> <p>10 fechas</p>
+                    </div>
+                    </div>
             </div>
         </div>
     </div>
-</footer>
+    <br>
+    <div class="container">
+        <h3>Conciertos recién anunciados</h3>
+        <p style="letter-spacing: 0px"><strong>¡Barns Courtney acaba de agregar 10 nuevas fechas de conciertos!</strong> Prepárate para los espectáculos en Estados Unidos y Canadá.</p>
+    </div>
+
+        <div class="container my-4 text-center">
+    <!-- Botones de filtro -->
+    <div class="btn-group" role="group" aria-label="Filtros de conciertos">
+        <button type="button" class="btn btn-outline-dark active" onclick="filterEvents('all')">Todos</button>
+        <button type="button" class="btn btn-outline-dark" onclick="filterEvents('usa')">Estados Unidos</button>
+        <button type="button" class="btn btn-outline-dark" onclick="filterEvents('canada')">Canadá</button>
+    </div>
+    </div>
+
+    <!-- Lista de conciertos -->
+    <div class="container my-4">
+    <div class="row">
+        <!-- Ejemplo USA -->
+        <div class="col-sm-6 mb-4 event usa">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">01</span> </div>
+                    <h5 class="card-title">Dallas, TX</h5>
+                    <p class="card-text">Club Dada - 1 abril 2026</p>
+                    <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalDallas">
+                        Ver detalles
+                    </button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-sm-6 mb-4 event usa"> <div class="card shadow"> <div class="card-body"> <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">02</span> </div> <h5 class="card-title">Austin, TX</h5> <p class="card-text">3Ten Austin City Limits Live - 2 abril 2026</p> <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalAustin"> Ver detalles </button> </div> </div> </div> <div class="col-sm-6 mb-4 event usa"> <div class="card shadow"> <div class="card-body"> <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">04</span> </div> <h5 class="card-title">New Orleans, LA</h5> <p class="card-text">Chickie Wah Wah - 4 abril 2026</p> <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalNewOrleans"> Ver detalles </button> </div> </div> </div> <div class="col-sm-6 mb-4 event usa"> <div class="card shadow"> <div class="card-body"> <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">06</span> </div> <h5 class="card-title">Tampa, FL</h5> <p class="card-text">Crowbar - 6 abril 2026</p> <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalTampa"> Ver detalles </button> </div> </div> </div> <div class="col-sm-6 mb-4 event usa"> <div class="card shadow"> <div class="card-body"> <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">07</span> </div> <h5 class="card-title">Orlando, FL</h5> <p class="card-text">The Social - 7 abril 2026</p> <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalOrlando"> Ver detalles </button> </div> </div> </div> <div class="col-sm-6 mb-4 event usa"> <div class="card shadow"> <div class="card-body"> <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">08</span> </div> <h5 class="card-title">Jacksonville, FL</h5> <p class="card-text">Jack Rabbits - 8 abril 2026</p> <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalJacksonville"> Ver detalles </button> </div> </div> </div> <div class="col-sm-6 mb-4 event usa"> <div class="card shadow"> <div class="card-body"> <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">10</span> </div> <h5 class="card-title">Atlanta, GA</h5> <p class="card-text">The Masquerade - Purgatory - 10 abril 2026</p> <button class="btn  wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalAtlanta"> Ver detalles </button> </div> </div> </div> <div class="col-sm-6 mb-4 event usa"> <div class="card shadow"> <div class="card-body"> <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">11</span> </div> <h5 class="card-title">Raleigh, NC</h5> <p class="card-text">Kings - 11 abril 2026</p> <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalRaleigh"> Ver detalles </button> </div> </div> </div> <div class="col-sm-6 mb-4 event usa"> <div class="card shadow"> <div class="card-body"> <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">12</span> </div> <h5 class="card-title">Washington, DC</h5> <p class="card-text">Pearl Street Warehouse - 12 abril 2026</p> <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalWashington"> Ver detalles </button> </div> </div> </div>
+
+        <!-- Ejemplo Canadá -->
+        <div class="col-sm-6 mb-4 event canada">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="date-box text-center"> <span class="month">ABR</span> <span class="day">18</span> </div>
+                    <h5 class="card-title">Toronto, ON</h5>
+                    <p class="card-text">The Mod Club Theatre,</p>
+                    <button class="btn wow animate__animated animate__tada" style="background-color:#800020; color:white;" data-bs-toggle="modal" data-bs-target="#modalToronto">
+                        Ver detalles
+                    </button>
+                    </div>
+                </div>
+                </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalDallas" tabindex="-1" aria-labelledby="modalDallasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalDallasLabel">Dallas, TX - Club Dada</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 1 abril 2026</p>
+            <p><strong>Dirección:</strong> 2720 Elm St, Dallas, TX</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <a href="https://www.google.com/maps/place/Dallas,+Texas,+EE.+UU./@32.8180721,-97.0617489,10z/data=!3m1!4b1!4m6!3m5!1s0x864c19f77b45974b:0xb9ec9ba4f647678f!8m2!3d32.7766642!4d-96.7969879!16zL20vMGYycnE?authuser=2&entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D" target="_blank">Ver en Google Maps</a>
+
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalToronto" tabindex="-1" aria-labelledby="modalTorontoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalTorontoLabel">Toronto, ON - The Axis Club Theatre</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 18 abril 2026</p>
+            <p><strong>Dirección:</strong> 722 College St, Toronto, ON M6G 1C4, Canadá</p>
+            <p><strong>Teléfono:</strong> +1 416-532-5600</p>
+            <p><strong>Zona:</strong> Little Italy</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://maps.app.goo.gl/xac9RDnqYUeoggAc7" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
 
 
+    <div class="modal fade" id="modalAustin" tabindex="-1" aria-labelledby="modalAustinLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalAustinLabel">Austin, TX - 3Ten Austin City Limits Live</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 2 abril 2026</p>
+            <p><strong>Dirección:</strong> 310 Willie Nelson Blvd, Austin, TX 78701</p>
+            <p><strong>Teléfono:</strong> +1 512-404-1300</p>
+            <p><strong>Zona:</strong> Downtown Austin</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://maps.app.goo.gl/ZY5aZhPpKFQmSxb56" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
 
+    <div class="modal fade" id="modalNewOrleans" tabindex="-1" aria-labelledby="modalNewOrleansLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalNewOrleansLabel">New Orleans, LA - Chickie Wah Wah</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 4 abril 2026</p>
+            <p><strong>Dirección:</strong> 2828 Canal St, New Orleans, LA 70119</p>
+            <p><strong>Teléfono:</strong> +1 504-304-4714</p>
+            <p><strong>Zona:</strong> Mid-City</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://maps.app.goo.gl/zhZbmtduidYbg42A6" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalTampa" tabindex="-1" aria-labelledby="modalTampaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalTampaLabel">Tampa, FL - Crowbar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 6 abril 2026</p>
+            <p><strong>Dirección:</strong> 1812 N 17th St, Tampa, FL 33605</p>
+            <p><strong>Teléfono:</strong> +1 813-241-8600</p>
+            <p><strong>Zona:</strong> Ybor City</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://maps.app.goo.gl/AeX2NStNK5WTbs6C6" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="modal fade" id="modalOrlando" tabindex="-1" aria-labelledby="modalOrlandoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalOrlandoLabel">Orlando, FL - The Social</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 7 abril 2026</p>
+            <p><strong>Dirección:</strong> 54 N Orange Ave, Orlando, FL 32801</p>
+            <p><strong>Teléfono:</strong> +1 407-246-1419</p>
+            <p><strong>Zona:</strong> Downtown Orlando</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://maps.app.goo.gl/mqKcf3mpHVMynLSS7" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalJacksonville" tabindex="-1" aria-labelledby="modalJacksonvilleLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalJacksonvilleLabel">Jacksonville, FL - Jack Rabbits</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 8 abril 2026</p>
+            <p><strong>Dirección:</strong> 1528 Hendricks Ave, Jacksonville, FL 32207</p>
+            <p><strong>Teléfono:</strong> +1 904-398-7496</p>
+            <p><strong>Zona:</strong> San Marco</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://maps.app.goo.gl/JLZB4JNsafs76yVy6" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalAtlanta" tabindex="-1" aria-labelledby="modalAtlantaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalAtlantaLabel">Atlanta, GA - The Masquerade (Purgatory)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 10 abril 2026</p>
+            <p><strong>Dirección:</strong> 50 Lower Alabama St, Atlanta, GA 30303</p>
+            <p><strong>Teléfono:</strong> +1 404-577-8178</p>
+            <p><strong>Zona:</strong> Underground Atlanta</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://maps.app.goo.gl/8KhJCazxPUrNETdL7" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalRaleigh" tabindex="-1" aria-labelledby="modalRaleighLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalRaleighLabel">Raleigh, NC - Kings</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 11 abril 2026</p>
+            <p><strong>Dirección:</strong> 14 W Martin St, Raleigh, NC 27601</p>
+            <p><strong>Teléfono:</strong> +1 919-833-1099</p>
+            <p><strong>Zona:</strong> Downtown Raleigh</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://maps.app.goo.gl/odpVA8PYCufePNhv6" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalWashington" tabindex="-1" aria-labelledby="modalWashingtonLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#800020; color:white;">
+            <h5 class="modal-title" id="modalWashingtonLabel">Washington, DC - Pearl Street Warehouse</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Fecha:</strong> 12 abril 2026</p>
+            <p><strong>Dirección:</strong> 33 Pearl St SW, Washington, DC 20024</p>
+            <p><strong>Teléfono:</strong> +1 202-380-9620</p>
+            <p><strong>Zona:</strong> The Wharf</p>
+            <p><strong>Puertas:</strong> 7:00 PM</p>
+            <p><strong>Show:</strong> 8:00 PM</p>
+            <p><strong>Boletos:</strong> <a href="https://www.ticketmaster.ca/search?q=barns%20courtney" target="_blank">Comprar aquí</a></p>
+            <p><a href="https://www.google.com/maps/place/Pearl+Street+Warehouse" target="_blank">Ver en Google Maps</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    
+
+    <script>
+    window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".navbar");
+        nav.classList.toggle("navbar-scrolled", window.scrollY > 100);
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+<footer class="bg-black text-white text-center">
+                <div>
+                    <div class="col-md-12 py-5">
+                        <div class="margin-5 flex-center">
+                            <a href="https://www.youtube.com/@rels9" class="fb-ic">
+                                <i  class="fa-brands fa-youtube fa-lg text-secondary"></i>
+                            </a>
+                            <a href="https://www.instagram.com/p/DCzlUdRNr-U/" class="li-ic">
+                                <i class="fa-brands fa-instagram fa-lg  text-secondary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+</footer>
+    <script>
+        function filterEvents(region) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                if (region === 'all') {
+                event.style.display = 'block';
+                } else {
+                event.style.display = event.classList.contains(region) ? 'block' : 'none';
+                }
+            });
 
+            // Cambiar estado activo del botón
+            document.querySelectorAll('.btn-group .btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </html>
+
+<!--<div class="date-box text-center"> <span class="month">ABR</span> <span class="day">01</span> </div>-->

@@ -3,117 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css copy/style.css">
+    <link rel="icon" href="img/logo.ico">
     <title>Pagina1</title>
-    <header>
-        <div class="container">
-        <img src="img/banner-amanecer.jpg"class="img-fluid"  width="1300" height="400"alt="">
-        </div>
-    <div class="container">
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#!"><strong>Pagina Artista</strong></a>
-            
-            <!-- Botón hamburguesa  -->
-            <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Menú colapsable -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="index.html">Biografia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="musica.html">Musica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gira.html">Gira</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
+    <header id="top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top navbar-transparent">
 
+    <div class="container">
+        <!-- Marca -->
+        <a class="navbar-brand" href="#top"><strong>Pagina Artista</strong></a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Biografía</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="musica.html">Música</a></li>
+            <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+            <li class="nav-item"><a class="nav-link" href="gira.html">Gira</a></li>
+            <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Redes sociales al estilo Benda -->
+        <div class="d-flex">
+            <a class="nav-link" href="https://facebook.com" target="_blank">
+            <i class="bi bi-facebook"></i>
+            </a>
+            <a class="nav-link" href="https://instagram.com" target="_blank">
+            <i class="bi bi-instagram"></i>
+            </a>
+            <a class="nav-link" href="https://tiktok.com" target="_blank">
+            <i class="bi bi-tiktok"></i>
+            </a>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <img src="img/tienda-banner.webp" class="img-fluid" alt="foto de tienda de barns">
 </header>
 </head>
 <body>
-    <br><br>
     <!-- Tabla Tiendas Oficiales Rels B -->
-<div class="container">
-    <h1> Tiendas Oficiales de Merch Rels B </h1>
-    <hr style="border: 5px solid; color: blue; width: 50%;">
-    <br>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Tienda</th>
-                <th scope="col">Qué ofrece</th>
-                <th scope="col">Ventajas</th>
-                <th scope="col">Posibles desventajas</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!--Fila 1-->
-            <tr>
-                <th scope="row">1</th>
-                <td>FlakkTeam</td>
-                <td>Camisetas, hoodies, long sleeves, posters y vinilos del tour <i>A New Star World Tour 2025</i>.</td>
-                <td>Merch oficial del tour, diseños exclusivos, buena variedad de tallas.</td>
-                <td>Precios en euros y envíos internacionales costosos.</td>
-            </tr>
-            <!--Fila 2-->
-            <tr>
-                <th scope="row">2</th>
-                <td>Apparell</td>
-                <td>Ropa exclusiva, productos oficiales, info de conciertos.</td>
-                <td>Catálogo oficial, artículos exclusivos.</td>
-                <td>Disponibilidad limitada según el país, costos de envío.</td>
-            </tr>
-            <!--Fila 3-->
-            <tr>
-                <th scope="row">3</th>
-                <td>Merchbar</td>
-                <td>Camisetas, vinilos y coleccionables.</td>
-                <td>Plataforma reconocida, servicio internacional.</td>
-                <td>Stock limitado y precios elevados en transporte.</td>
-            </tr>
-            <!--Fila 4-->
-            <tr>
-                <th scope="row">4</th>
-                <td>Andromeda.shop</td>
-                <td>Merch oficial con envíos a México.</td>
-                <td>Envío nacional, costos más bajos en aduana.</td>
-                <td>Menor variedad que las tiendas europeas.</td>
-            </tr>
-            <!--Fila 5-->
-            <tr>
-                <th scope="row">5</th>
-                <td>RelsBMerch.com</td>
-                <td>Ropa, artículos decorativos y colecciones recientes.</td>
-                <td>Especializada en merch de Rels B, lanzamientos nuevos.</td>
-                <td>Verificar autenticidad y tallas; envíos internacionales pueden ser caros.</td>
-            </tr>
-        </tbody>
-    </table>
+    <div style="background-color:#f8f9fa ;">
+        <h1 style="text-align: center;"> Tienda Oficial de Barns Courtney </h1>
+        <div class="container">
+            <hr style="border: 1px solid; color: black;">
+            <br>
+        </div>
+    </div>
 
-</div>
-
+    <div class="container">
+        <h3 style="text-align: center;">Descuentos online + envío a domicilio en moda y ropa</h3>
+        <p style="letter-spacing:0px;">Estrena con el estilo y la calidad que solo Barns Shop puede darte.
+            ¿Por qué comprar online en Barns shop? Aquí encontrarás descuentos y beneficios en línea en ropa
+            diseñada para acompañarte en tu día a día, con precios accesibles y promociones de temporada.
+            Aprovecha el envío a domicilio para estrenar sin salir de casa, o recibe tu pedido con todos 
+            los envíos gratis a todas nuestras tiendas.
+            <br><br>
+            En nuestra colección encontrarás diversos fits: sudaderas y chamarras para un look moderno y versátil.
+            Playeras y sudaderas que combinan estilo y comodidad. Vestidos, blusas y tops para sentirte increíble
+            en todo momento. Mochilas y calzado que completan tu outfit con actitud. Todas las prendas están
+            confeccionadas con materiales de primera que garantizan durabilidad, comodidad y un look impecable. 
+            <br><br>
+            Descubre novedades y promociones únicas que no encontrarás en otro lugar. Compra hoy, luce increíble
+            y disfruta siempre de precios accesibles </p>
+    </div>
+    <div class="container" style="padding: 40px; background-color: #800020; border-radius: 10px;" >
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/promocion1.webp" alt="Ropa edicion especial" class="img-fluid">
+            </div>
+            <div class="col-sm-6" style="color: white;">
+                <h3>Descubre lo Sobrenatural con Barns Courtney</h3>
+                <p style="letter-spacing:0px;">Sumérgete en The Supernatural Collection, una línea exclusiva de merch que fusiona el estilo
+                    rebelde del rock con símbolos místicos y gráficos audaces.
+                <br><br>
+                Desde camisetas con serpientes y autos clásicos hasta gorras y parches que cuentan historias ocultas, cada pieza está diseñada
+                para fans que buscan algo más que moda: buscan una experiencia.
+                <br><br>
+                Inspirada en paisajes desérticos y energía ritual, esta colección es un tributo visual al universo de Barns
+                Courtney.
+            </p>
+                    
+            </div>
+        </div>
+    </div>
 
     <!--IMAGENES GALERIA-->
     <style>
@@ -139,56 +127,255 @@
     }
     </style>
 
-    <div class="container mt-4">
-    <section>
-        <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
+
+    <div class="container my-4 text-center">
+    <!-- Botones de filtro -->
+    <div class="btn-group" role="group" aria-label="Filtros de conciertos">
+        <button type="button" class="btn btn-outline-dark active" onclick="filterEvents('all')">Todos</button>
+        <button type="button" class="btn btn-outline-dark" onclick="filterEvents('playeras')">Playeras</button>
+        <button type="button" class="btn btn-outline-dark" onclick="filterEvents('sudaderas')">Sudaderas</button>
+    </div>
+    </div>
+
+    <div class="container my-5">
+    <div class="row">
+
+        <!-- SUDADERAS -->
+        <div class="col-lg-4 col-md-6 mb-4 event sudaderas">
             <div class="image-container">
-            <img src="img/tienda-barns.webp" class="img-fluid rounded-bottom" alt="Imagen 1" style="width: 100%; height: auto;">
-            <div class="rgba-stylish-strong">
-                <h4 class="card-title font-weight-bold">
-                <strong>404</strong>
-                </h4>
-            </div>
+                <img src="img/tienda-barns6.webp" class="img-fluid rounded" alt="Sudadera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Sudadera estilo Original</strong>
+                    </h4>
+                </div>
             </div>
         </div>
 
-        <div class="col-lg-4 col-md-12 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4 event sudaderas">
             <div class="image-container">
-            <img src="img/tienda-barnss.webp" class="img-fluid rounded-bottom" alt="Imagen 1" style="width: 100%; height: auto;">
-            <div class="rgba-stylish-strong">
-                <h4 class="card-title font-weight-bold">
-                <strong>The Attractions Of Youth</strong>
-                </h4>
-            </div>
+                <img src="img/tienda-barns-sudadera-2.webp" class="img-fluid rounded" alt="Sudadera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Sudadera Supernatural Original</strong>
+                    </h4>
+                </div>
             </div>
         </div>
 
-    
+        <div class="col-lg-4 col-md-6 mb-4 event sudaderas">
+            <div class="image-container">
+                <img src="img/tienda-sudadera.png" class="img-fluid rounded" alt="Sudadera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Sudadera Supernatural</strong>
+                    </h4>
+                </div>
             </div>
         </div>
+
+
+        <!-- PLAYERAS -->
+        <div class="col-lg-4 col-md-6 mb-4 event playeras">
+            <div class="image-container">
+                <img src="img/tienda-barns.webp" class="img-fluid rounded animate__pulse" alt="Playera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Playera primer gira</strong>
+                    </h4>
+                </div>
+            </div>
         </div>
-    </section> 
-    
+
+        <div class="col-lg-4 col-md-6 mb-4 event playeras">
+            <div class="image-container">
+                <img src="img/tienda-barnss.webp" class="img-fluid rounded" alt="Playera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Playera Estilo Original</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 event playeras">
+            <div class="image-container">
+                <img src="img/tienda-barnsss.webp" class="img-fluid rounded" alt="Playera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Playera Album 404</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 event playeras">
+            <div class="image-container">
+                <img src="img/tienda-barns4.webp" class="img-fluid rounded" alt="Playera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Playera Supernatural</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 event playeras">
+            <div class="image-container">
+                <img src="img/tienda-barns5.webp" class="img-fluid rounded" alt="Playera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Playera Gira Orlando</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 event playeras">
+            <div class="image-container">
+                <img src="img/tienda-barns-playera5.webp" class="img-fluid rounded" alt="Playera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Playera Supernatural</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 event playeras">
+            <div class="image-container">
+                <img src="img/tienda-barns-playera6.webp" class="img-fluid rounded" alt="Playera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong>Playera Album The Drums</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 event playeras">
+            <div class="image-container">
+                <img src="img/tienda-barns-playera7.webp" class="img-fluid rounded" alt="Playera">
+                <div class="rgba-stylish-strong">
+                    <h4 class="card-title font-weight-bold">
+                        <strong> Playera album The Attractions Of Youth</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tienda</th>
+                    <th scope="col">Qué ofrece</th>
+                    <th scope="col">Ventajas</th>
+                    <th scope="col">Posibles desventajas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Fila 1-->
+                <tr>
+                    <th scope="row">1</th>
+                    <td>FlakkTeam</td>
+                    <td>Camisetas, hoodies, long sleeves, posters y vinilos del tour <i>Supernatural</i>.</td>
+                    <td>Merch oficial del tour, diseños exclusivos, buena variedad de tallas.</td>
+                    <td>Precios en euros y envíos internacionales costosos.</td>
+                </tr>
+                <!--Fila 2-->
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Apparell</td>
+                    <td>Ropa exclusiva, productos oficiales, info de conciertos.</td>
+                    <td>Catálogo oficial, artículos exclusivos.</td>
+                    <td>Disponibilidad limitada según el país, costos de envío.</td>
+                </tr>
+                <!--Fila 3-->
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Merchbar</td>
+                    <td>Camisetas, vinilos y coleccionables.</td>
+                    <td>Plataforma reconocida, servicio internacional.</td>
+                    <td>Stock limitado y precios elevados en transporte.</td>
+                </tr>
+                <!--Fila 4-->
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Andromeda.shop</td>
+                    <td>Merch oficial con envíos a México.</td>
+                    <td>Envío nacional, costos más bajos en aduana.</td>
+                    <td>Menor variedad que las tiendas europeas.</td>
+                </tr>
+                <!--Fila 5-->
+                <tr>
+                    <th scope="row">5</th>
+                    <td>BarnsCourtneybmerch.COM</td>
+                    <td>Ropa, artículos decorativos y colecciones recientes.</td>
+                    <td>Especializada en merch de Rels B, lanzamientos nuevos.</td>
+                    <td>Verificar autenticidad y tallas; envíos internacionales pueden ser caros.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
 
     
-<footer class="bg-primary text-white text-center py-3 cont">
+<footer class="bg-dark text-white text-center py-3 cont">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 py-5">
+            <div class="col-md-6 py-5">
                 <div class="margin-5 flex-center">
-                    <a href="https://www.youtube.com/@rels9" class="fb-ic">
+                    <a href="https://www.youtube.com/@barnscourtney3812" class="fb-ic">
                         <i  class="fa-brands fa-youtube fa-lg text-secondary mb-3"></i>
                     </a>
-                    <a href="https://www.instagram.com/p/DCzlUdRNr-U/" class="li-ic">
+                    <p>Accede a mas videos del artista</p>
+                </div>
+            </div>
+            <div class="col-md-6 py-5">
+                <div class="margin-5 flex-center">
+                    <a href="https://www.instagram.com/barnscourtney/" class="li-ic">
                         <i class="fa-brands fa-instagram fa-lg  text-secondary mb-3"></i>
                     </a>
+                    <p>Accede a una de las redes mas influyentes</p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<script>
+  window.addEventListener("scroll", function () {
+    const nav = document.querySelector(".navbar");
+    nav.classList.toggle("navbar-scrolled", window.scrollY > 100);
+  });
+</script>
+<script>
+        function filterEvents(region) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => {
+                if (region === 'all') {
+                event.style.display = 'block';
+                } else {
+                event.style.display = event.classList.contains(region) ? 'block' : 'none';
+                }
+            });
 
+            // Cambiar estado activo del botón
+            document.querySelectorAll('.btn-group .btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            }
+
+    </script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 

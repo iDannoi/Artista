@@ -4,50 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Pagina1</title>
-    <header>
-        <div class="container">
-        <img src="img/banner-amanecer.jpg"class="img-fluid"  width="1300" height="400"alt="">
-        </div>
-    <div class="container">
-    <nav class="navbar navbar-expand-sm bg-black navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#!"><strong>Pagina Artista</strong></a>
-            
-            <!-- Botón hamburguesa  -->
-            <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Menú colapsable -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="index.html">Biografia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="musica.html">Musica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gira.html">Gira</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css copy/style.css">
+    <link rel="icon" href="img/logo.ico">
+    <title>MUSICA</title>
+    <header id="top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top navbar-transparent container-fluid">
+
+  <div class="container">
+    <!-- Marca -->
+    <a class="navbar-brand" href="#top"><strong>Pagina Artista</strong></a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Biografía</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="musica.html">Música</a></li>
+        <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="gira.html">Gira</a></li>
+        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <!-- Redes sociales al estilo Benda -->
+      <div class="d-flex">
+        <a class="nav-link" href="https://facebook.com" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="nav-link" href="https://instagram.com" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="nav-link" href="https://tiktok.com" target="_blank">
+          <i class="bi bi-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<img src="img/musica-barns.jpg" alt="barns banner microfono" class="img-fluid" id="top">
 
 </header>
 </head>
@@ -61,28 +67,28 @@
         left: 40px;
         color: white;
     }
-    .rgba-stylish-strong {
-        background-color: rgba(62, 69, 81, 0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 0 0 10px 10px;
-    }
     .image-container {
         position: relative;
         overflow: hidden;
         border-radius: 0 0 10px 10px;
     }
+    
+    .efecto-gris {
+        transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .efecto-gris:hover {
+        filter: grayscale(100%);
+        transform: scale(1.05);
+        }
     </style>
 
     <div class="container mt-4">
     <section>
         <div class="row">
         <div class="col-lg-4 col-md-12 mb-4">
-            <div class="image-container">
-            <img src="img/musica-404.jpg" class="img-fluid rounded-bottom" alt="Imagen 1" style="width: 100%; height: auto;">
+            <div class="image-container efecto-gris">
+            <a href="musica.html#404"><img src="img/musica-404.jpg" class="img-fluid rounded-bottom animate__animated animate__pulse" alt="Imagen 1" style="width: 100%; height: auto;"></a>
             <div class="rgba-stylish-strong">
                 <h4 class="card-title font-weight-bold">
                 <strong>404</strong>
@@ -92,8 +98,8 @@
         </div>
 
         <div class="col-lg-4 col-md-12 mb-4">
-            <div class="image-container">
-            <img src="img/muscia-Att.jpg" class="img-fluid rounded-bottom" alt="Imagen 1" style="width: 100%; height: auto;">
+            <div class="image-container efecto-gris">
+            <a href="musica.html#youth"><img src="img/muscia-Att.jpg" class="img-fluid rounded-bottom wow animate__animated animate__pulse" alt="Imagen 1" style="width: 100%; height: auto;"></a>
             <div class="rgba-stylish-strong">
                 <h4 class="card-title font-weight-bold">
                 <strong>The Attractions Of Youth</strong>
@@ -103,8 +109,8 @@
         </div>
 
         <div class="col-lg-4 col-md-12 mb-4">
-            <div class="image-container">
-            <img src="img/musica-405.jpg" class="img-fluid rounded-bottom" alt="Imagen 1" style="width: 100%; height: auto;">
+            <div class="image-container efecto-gris">
+            <a href="musica.html#TDull"><img src="img/musica-405.jpg" class="img-fluid rounded-bottom  wow animate__animated animate__pulse" alt="Imagen 1" style="width: 100%; height: auto;"></a>
             <div class="rgba-stylish-strong">
                 <h4 class="card-title font-weight-bold">
                 <strong>The Dull</strong>
@@ -121,203 +127,437 @@
         </div>
     </div>
     <br>
-    <h2>Discografia</h2>
+    <h1>Discografia</h1>
     <hr style="border: 5px solid; color: blue; width: 100%;">
 
     <h3>EPs y sencillos clave  </h3>
     <p class="justify-text">Barns comenzó con un sonido muy orgánico y rebelde, casi como si cada canción fuera
         grabada en una sola toma con la adrenalina al máximo. Con el tiempo, ha incorporado más
         producción electrónica y elementos pop sin perder su esencia vocal rasposa y emocional.</p>
-
-    <p>Sencillos destacados:</p>
-    <ul>
-        <li>Fire (2015)</li>
-        <li>Fire (2015)</li>
-        <li>Hellfire (2017)</li>
-        <li>You and I (2019)</li>
-        <li>Supernatural (2024)</li>
-    </ul>
-    
-    <div >
-        <img src="img/musica-vinil.jpg" alt="imagen de vinil" class="justify-content-center">
+    <div class="container" style="padding: 10px;">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Sencillos destacados:</p>
+                <ul>
+                    <li>Fire (2015)</li>
+                    <li>Fire (2015)</li>
+                    <li>Hellfire (2017)</li>
+                    <li>You and I (2019)</li>
+                    <li>Supernatural (2024)</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="img/musica-vinil-co.jpg.png" alt="imagen de vinil" class="justify-content-center wow spin-infinite">
+                <img src="img/musica-vinil2.png" alt="imagen de vinil" class="justify-content-center  wow spin-infinite">
+            </div>
+        </div>
+    </div>
+    <!--SECCION DE MUSICA-->
+    <div style="background-color: black; padding: 10px; border-radius: 5px;"   >
+        <div class="row" id="404">
+            <div class="col-sm-6">
+            <img src="img/musica-404.jpg" alt=""  style="max-width: 250px; border-radius: 5px;">
+            </div>
+            <div class="col-sm-6" style="padding-top: 80px;">
+                <h1 style="color: white;">ALBUM 404</h1>
+            </div>
+        </div>
     </div>
 
     <!--Ejemplo Tabla 2-->
     <div class="container">
-        <h1> 404</h1>
-        <hr style="border: 5px solid; color: blue; width: 50%;">
-        <br>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Numero de canciones</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Duracion</th>
-                    <th scope="col">Año</th>
-                </tr>
-                <tbody>
-                    <tr>
-                        <!--Fila 1-->
-                        <th scope="row">1</th>
-                        <th> Re-member</th>
-                        <th> 4:30Min</th>
-                        <th>2016</th>
-                    </tr>
-                    <!--Fila 2-->
-                    <tr>
-                        <th scope="row">2</th>
-                        <th>Fiesta en Keli</th>
-                        <th>7:34Min</th>
-                        <th>2016</th>
-                    </tr>
-                    <tr>
-                        <!--Fila 3-->
-                        <th scope="row">3</th>
-                        <th>Baila Más</th>
-                        <th>3:32Min</th>
-                        <th>2016</th>
-                    </tr>
-                </tbody>
-            </thead>
-        </table>
-
-        <h2> The Attractions Of Youth</h2>
-        <hr style="border: 5px solid; color: blue; width: 50%;">
-        <br>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Numero de canciones</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Duracion</th>
-                    <th scope="col">Año</th>
-                </tr>
-                <tbody>
-                    <tr>
-                        <!--Fila 1-->
-                        <th scope="row">1</th>
-                        <th> Baladita 2000</th>
-                        <th> 3:20Min</th>
-                        <th>2020</th>
-                    </tr>
-                    <!--Fila 2-->
-                    <tr>
-                        <th scope="row">2</th>
-                        <th>Orgullo </th>
-                        <th>3:06Min</th>
-                        <th>2020</th>
-                    </tr>
-                    <tr>
-                        <!--Fila 3-->
-                        <th scope="row">3</th>
-                        <th>La latina</th>
-                        <th>3:12Min</th>
-                        <th>2020</th>
-                    </tr>
-                </tbody>
-            </thead>
-        </table>
-        </div>
-
-        <h2> The Dull</h2>
-        <hr style="border: 5px solid; color: blue; width: 50%;">
-        <br>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Numero de canciones</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Duracion</th>
-                    <th scope="col">Año</th>
-                </tr>
-                <tbody>
-                    <tr>
-                        <!--Fila 1-->
-                        <th scope="row">1</th>
-                        <th> Hellfire</th>
-                        <th> 2:49Min</th>
-                        <th>2018</th>
-                    </tr>
-                    <!--Fila 2-->
-                    <tr>
-                        <th scope="row">2</th>
-                        <th>Giltter Gold </th>
-                        <th>3:06Min</th>
-                        <th>2018</th>
-                    </tr>
-                    <tr>
-                        <!--Fila 3-->
-                        <th scope="row">3</th>
-                        <th>Campeon</th>
-                        <th>3:11Min</th>
-                        <th>2018</th>
-                    </tr>
-                </tbody>
-            </thead>
-        </table>
-        </div>
-        <br>
-
-
-
-        <!--Seccion de noticia-->
-    <div class="container mt-5 pt-5 px-5 shadow">
-        <section class="text-center text-bg-grey p-4 rounded">
-            <div class="row justify-content-center">
-    
-            <div class="col-lg-3 col-md-6 mb-4">
-                <i class="fa-regular fa-circle-user fa-2x text-secondary mb-3"></i>
-            <h5 class="fw-normal mb-3">Bibliografia</h5>
-                <p class="text-muted mb-0">Artista vida</p>
-            </div>
-    
-            <div class="col-lg-3 col-md-6 mb-4">
-                <i class="fa-solid fa-thumbs-up fa-2x text-secondary mb-3"></i>
-            <h5 class="fw-normal mb-3">Excelente Musica</h5>
-                <p class="text-muted mb-0">Encontraras exitos del artista </p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
-                <i class="fa-solid fa-cloud fa-2x text-secondary mb-3"></i>
-            <h5 class="fw-normal mb-3">Musica fenomenal</h5>
-                <p class="text-muted mb-0">que te lleva por las nubes</p>
-            </div>
-    
-            <div class="col-lg-3 col-md-6 mb-4">
-                <i class="fa-solid fa-bell fa-2x text-secondary mb-3"></i>
-            <h5 class="fw-normal mb-3">Giras</h5>
-                <p class="text-muted mb-0">Futuras guias del artista</p>
-            </div>
-        </div>
-        </section>
-</div>
-
-
-<br><br>
-        <div class="container text-center">
-    <button onclick="location.href='index.html'" class="btn btn-dark mt-4">Conóceme mas</button>
-</div>
-<br><br>
-
-
-<br>
-<footer class="bg-primary text-white text-center py-3 cont">
-    <div class="container">
+        <h3 style="padding-top: 15px;"> Lista de canciones de 404</h3>
+        <hr style="border: 1px solid; color: black; width: 40%;">
         <div class="row">
-            <div class="col-md-12 py-5">
-                <div class="margin-5 flex-center">
-                    <a href="https://www.youtube.com/@rels9" class="fb-ic">
-                        <i  class="fa-brands fa-youtube fa-lg text-secondary mb-3"></i>
-                    </a>
-                    <a href="https://www.instagram.com/p/DCzlUdRNr-U/" class="li-ic">
-                        <i class="fa-brands fa-instagram fa-lg  text-secondary mb-3"></i>
-                    </a>
-                </div>
+            <div class="col-sm-6">
+                <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Numero <br>de canciones</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Vistas</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <!--Fila 1-->
+                        <th scope="row">1</th>
+                        <th> Hollow</th>
+                        <th> <i class="fa-regular fa-eye fa-sm"></i> 781K</th>
+                    </tr>
+                    <!--Fila 2-->
+                    <tr>
+                        <th scope="row">2</th>
+                        <th>You and I</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 17K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 3-->
+                        <th scope="row">3</th>
+                        <th>"99"</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 2.7M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 4-->
+                        <th scope="row">4</th>
+                        <th>London Girls</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 3M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 5-->
+                        <th scope="row">5</th>
+                        <th>Fun Never Ends</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 712K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 6-->
+                        <th scope="row">6</th>
+                        <th>Boy like me</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 490K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 7-->
+                        <th scope="row">7</th>
+                        <th>The kings Are Alright</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 514K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 8-->
+                        <th scope="row">8</th>
+                        <th>Castaway</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 3.3M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 9-->
+                        <th scope="row">9</th>
+                        <th>Baby London</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 2.7M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 10-->
+                        <th scope="row">10</th>
+                        <th>CannonBall</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 880K</th>
+                    </tr>
+                </tbody>
+            </thead>
+                </table>
+            <img src="img/muscia-vinil3.png" class="wow spin-infinite" alt="vinil de color marillo ">
+            </div>
+            <div class="col-sm-6" >
+                <aside class="bg-light p-4 border rounded">
+                    <h5 style="font-family: 'Bebas Neue', sans-serif;"><strong>Frases célebres y estilo personal</strong></h5>
+                    <p style="letter-spacing: 0px"> 404 es el segundo álbum de Barns Courtney. Su segundo álbum salió
+                        el 6 de septiembre de 2019. La canción You and I es el primer single que sale del álbum</p>
+                    <br>
+                    <p style="letter-spacing: 0px;">
+                        Barns tuvo dificultades para encontrar un título de álbum, ya que su álbum AOY (Attractions of Youth)
+                        estaba motivado por gran parte de su depresión tras haber sido dejado por su discográfica tras años
+                        de duro trabajo. Barns afirma haber encontrado "mucho remordimiento y tristeza en la nostalgia"
+                        mientras grababa en una habitación insonorizada situada en el sótano de la casa de los padres de un colaborador de toda la vida.
+                    </p>
+                    <a href="videos.html#bio-tab">Conoce las canciones mas iconicas</a>
+                    <br>
+                    <a href="contacto.html#bio-tab">Contacta con nosotros</a>
+                    <br>
+                    <a href="gira.html#bio-tab">Nuestras proximas giras</a>
+                </aside>
+                <h4 style="padding-top: 30px;">Atracciones de la juventud. Preguntas y respuestas</h4>
+                <div id="accordion" style="padding-top: 30px;">
+                        <div class="card bg-light" >
+                            <div class="card-header">
+                            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                ¿Cuál es la canción más popular de The Attractions Of Youth de Barns Courtney?
+                            </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body text-bg-warning">
+                                La canción más popular de The Attractions Of Youth de Barns Courtney es "Glitter & Gold", con un total de 30 Millones de vistas.
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-light">
+                            <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                ¿Cuándo estrenó Barns Courtney Las atracciones de la juventud?
+                            </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body text-bg-warning">
+                                Barns Courtney estrenó The Attractions Of Youth el 29 de septiembre de 2017.
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+            </div>
+        </div>
+
+        <br><br>
+        <!--SECCION DE MUSICA 2-->
+    <div style="background-color: black; padding: 10px; border-radius: 5px;">
+        <div class="row" id="youth">
+            <div class="col-sm-6">
+            <img src="img/muscia-Att.jpg" alt=""  style="max-width: 250px; border-radius: 5px;">
+            </div>
+            <div class="col-sm-6" style="padding-top: 80px;">
+                <h1 style="color: white;">ALBUM The Attractions Of Youth</h1>
             </div>
         </div>
     </div>
-</footer>
 
+    <!--Ejemplo Tabla 2-->
+    <div class="container">
+        <h3 style="padding-top: 15px;"> Lista de canciones de The Attractions Of Youth</h3>
+        <hr style="border: 1px solid; color: black; width: 40%;">
+        <div class="row">
+            <div class="col-sm-6">
+                <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Numero <br>de canciones</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Vistas</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <!--Fila 1-->
+                        <th scope="row">1</th>
+                        <th> Fire</th>
+                        <th> <i class="fa-regular fa-eye fa-sm"></i> 33M</th>
+                    </tr>
+                    <!--Fila 2-->
+                    <tr>
+                        <th scope="row">2</th>
+                        <th>Hands</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 447K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 3-->
+                        <th scope="row">3</th>
+                        <th>Golden Dandelions</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 255K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 4-->
+                        <th scope="row">4</th>
+                        <th>Hellfire</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 821k</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 5-->
+                        <th scope="row">5</th>
+                        <th>Hobo Rocket</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 1.1M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 6-->
+                        <th scope="row">6</th>
+                        <th>Hobo Outside Tesco, London (Interlude) </th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 490K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 7-->
+                        <th scope="row">7</th>
+                        <th>Champion</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 514K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 8-->
+                        <th scope="row">8</th>
+                        <th>Kicks</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 11M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 9-->
+                        <th scope="row">9</th>
+                        <th>Never Let You Down </th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 3M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 10-->
+                        <th scope="row">10</th>
+                        <th>Goodbye John Smith</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 1.3M</th>
+                    </tr>
+                </tbody>
+            </thead>
+                </table>
+            <img src="img/vinil-musica4.png" class="wow spin-infinite" alt="vinil de color marillo ">
+            </div>
+            <div class="col-sm-6" >
+                <aside class="bg-light p-4 border rounded">
+                    <h5 style="font-family: 'Bebas Neue', sans-serif;"><strong>Ultimas noticias</strong></h5>
+                    <p style="letter-spacing: 0px"> En una entrevista con The Bridge, Barns habló sobre su anterior contrato
+                        discográfico del que fue apartado y cómo este fracaso le motivó, diciendo: "el beneficio del fracaso
+                        es simplemente muy importante. </p>
+                    <br>
+                    <p style="letter-spacing: 0px;">
+                        Es una de las cosas más importantes que creo que me ha pasado a mí y a mi composición porque escribí
+                        muchísimo y me dio ese impulso y pasión que me hizo cien veces más fuerte que antes. Realmente aprendí
+                        mucho... todo el álbum, más o menos, trata sobre el impulso por triunfar y ser desafiante ante la
+                        situación en la que me encuentro."
+                    </p>
+                    <a href="videos.html#disc">Conoce las canciones mas iconicas</a>
+                </aside>
+                <h4 style="padding-top: 30px;">Atracciones de la juventud. Preguntas y respuestas</h4>
+                    <div class="card mb-5" style="width:400px">
+        <img class="card-img-top img-fluid" src="img/logo.png" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">Entre cicatrices y símbolos: el arte de Barns</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ampliar imagen
+                </button>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalinfo">
+                Informacion referente
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Entre cicatrices y símbolos: el arte de Barns</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <img src="img/logo.png" alt="imagen casas en modal" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Modal 2 -->
+                <div class="modal fade" id="modalinfo" tabindex="-1" aria-labelledby="modalinfo" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalinfo">Entre cicatrices y símbolos: el arte de Barns</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <ul>
+                            <li>
+                                <p>Barns Courtney aparece con una chaqueta de cuero roja con letras blancas (“BIC”), una mano en gesto simbólico y un pentagrama.</p>
+                            </li>
+                            <li>
+                                <p>Esta prenda forma parte de su estilo visual durante la era del álbum The Attractions of Youth (2017), donde mezcla elementos de rock, punk y teatralidad provocadora</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+        </div>
+            </div>
+        </div>
+        </div>
+        <div >
+            <div style="background-color: black; padding: 10px; border-radius: 5px;"   >
+        <div class="row" id="TDull">
+            <div class="col-sm-6">
+            <img src="img/musica-405.jpg" alt=""  style="max-width: 250px; border-radius: 5px;">
+            </div>
+            <div class="col-sm-6" style="padding-top: 80px;">
+                <h1 style="color: white;">The Dull Dreams</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Ejemplo Tabla 2-->
+    <div class="container">
+        <h3 style="padding-top: 15px;"> The Dull Dreams</h3>
+        <hr style="border: 1px solid; color: black; width: 40%;">
+        <div class="row ">
+            <div class="col-sm-6">
+                <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Numero <br>de canciones</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Vistas</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <!--Fila 1-->
+                        <th scope="row">1</th>
+                        <th> Fire - EP</th>
+                        <th> <i class="fa-regular fa-eye fa-sm"></i> 15M</th>
+                    </tr>
+                    <!--Fila 2-->
+                    <tr>
+                        <th scope="row">2</th>
+                        <th>Glitter - EP</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 35M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 3-->
+                        <th scope="row">3</th>
+                        <th>Little Boy</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 758K</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 4-->
+                        <th scope="row">4</th>
+                        <th>Hellfire - EP</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 6.3M</th>
+                    </tr>
+                    <tr>
+                        <!--Fila 5-->
+                        <th scope="row">5</th>
+                        <th>Hands</th>
+                        <th><i class="fa-regular fa-eye fa-sm"></i> 699K</th>
+                    </tr>
+                </tbody>
+            </thead>
+                </table>
+            <img src="img/muscia-vinil3.png" class="wow spin-infinite" alt="vinil de color marillo ">
+            </div>
+            <div class="col-sm-6" >
+                <h3 style="padding-top: 30px;">Vestuarios iconicos</h3>
+                <img src="img/barns-vest.jpg" alt="Barns" class="img-fluid rounded-end-pill shadow animate__animated animate__backInRight" style="width: 300px;" >
+                <p>Viste la energía de lo oculto, lleva contigo el poder del escenario.</p>
+                <br><br>
+                <img src="img/slider-1.png" alt="Barns" class="img-fluid rounded-end-pill shadow animate__animated animate__backInRight" style="height: 200px; width: 300px;" >
+            </div>
+        </div>
+        </div>
+        <div class="container text-center">
+            <button onclick="location.href='index.html'" class="btn btn-dark mt-4">Conóceme mas</button>
+        </div>
+    </div>
+    </div>
+    </div>
+<footer class="bg-black text-white text-center">
+                <div>
+                    <div class="col-md-12 py-5">
+                        <div class="margin-5 flex-center">
+                            <a href="https://www.youtube.com/@rels9" class="fb-ic">
+                                <i  class="fa-brands fa-youtube fa-lg text-secondary"></i>
+                            </a>
+                            <a href="https://www.instagram.com/p/DCzlUdRNr-U/" class="li-ic">
+                                <i class="fa-brands fa-instagram fa-lg  text-secondary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+</footer>
+<script>
+    window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".navbar");
+        nav.classList.toggle("navbar-scrolled", window.scrollY > 100);
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
