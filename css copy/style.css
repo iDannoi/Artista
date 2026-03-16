@@ -1,0 +1,126 @@
+.navbar {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.navbar .nav-link {
+  color: #fff !important;
+  margin-right: 10px;
+}
+
+.navbar .nav-link:hover {
+  color: #f0ad4e !important; /* color dorado al pasar el mouse */
+}
+
+.dropdown-menu {
+  background-color: #222;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #444;
+}
+
+.navbar-transparent {
+  background: transparent;
+  transition: background-color 0.4s ease;
+}
+
+.navbar-scrolled {
+  background-color: #000;
+}
+h1, h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p {
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+/* linea del tiempo */
+.timeline-with-icons {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  background-color: hsl(217, 88.2%, 90%);
+  color: hsl(217, 88.8%, 35.1%);
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+   0% { transform: rotate(0deg); } 
+   100% { transform: rotate(360deg);}
+   } 
+.spin-infinite 
+{ animation: spin 2s linear infinite; }
+
+
+/* cards */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.date-box {
+  width: 60px;
+  background-color: #ffffff; /* fondo blanco */
+  border: 2px solid #800020; /* borde rojo vino opcional */
+  border-radius: 8px;
+  padding: 8px 0;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.date-box .month {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #800020; /* rojo vino para el mes */
+}
+
+.date-box .day {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000; /* negro para el número */
+}
+
+
